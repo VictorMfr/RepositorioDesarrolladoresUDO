@@ -8,7 +8,13 @@
   --radius:12px;
   --max-width:1100px;
   --gap:18px;
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  /*font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; - v1.0.0*/
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 *{box-sizing:border-box}
@@ -102,6 +108,7 @@ body{
   background:var(--glass);
   color:var(--text);
   outline:none;
+  font-family: 'Montserrat', sans-serif;
 }
 #search::placeholder{color:rgba(230,238,246,0.45)}
 .cta{
@@ -152,6 +159,7 @@ button{
   padding:8px 10px;
   cursor:pointer;
   border-radius:8px;
+  font-family: 'Montserrat', sans-serif;
 }
 .accordion-toggle:focus{
   outline:2px solid rgba(79,140,255,0.18);
