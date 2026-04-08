@@ -1,12 +1,258 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repositorio Desarrolladores UDO</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DevsUDO — Herramientas para Desarrolladores</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Bienvenido al Repositorio Desarrolladores UDO</h1>
-    <p>Este es el repositorio para los desarrolladores de la Universidad de Oriente.</p>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./index.html">DevsUDO</a>
+      <nav class="top-nav" aria-label="Navegación principal">
+        <a href="#ia" data-target="ia" class="nav-filter">IA</a>
+        <a href="#cloud" data-target="cloud" class="nav-filter">Nube</a>
+        <a href="#local" data-target="local" class="nav-filter">Servidores</a>
+        <a href="#css" data-target="css" class="nav-filter">CSS</a>
+        <a href="#backend" data-target="backend" class="nav-filter">BackEnd</a>
+        <a href="#frontend" data-target="frontend" class="nav-filter">FrontEnd</a>
+        <a href="#tools" data-target="tools" class="nav-filter">Herramientas</a>
+        <a href="#langs" data-target="langs" class="nav-filter">Lenguajes</a>
+        <a href="#collab" data-target="collab" class="nav-filter">Colaboración</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <h1>Herramientas para Desarrolladores</h1>
+        <p class="lead">Landing Page de herramientas para desarrolladores, entre estas IAs, frameworks, IDEs, y otras más.</p>
+
+        <div class="controls">
+          <input id="search" type="search" placeholder="Buscar herramienta o categoría..." aria-label="Buscar herramientas" />
+          <a class="cta" href="#ia">Explorar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categorías: -->
+    <section id="ia" class="section" data-section="ia">
+      <div class="wrap">
+        <h2 class="section-title">Inteligencias Artificiales</h2>
+        <div class="accordion" data-section="ia">
+          <button class="accordion-toggle" aria-expanded="false" aria-controls="ia-panel">Ver herramientas</button>
+          <div id="ia-panel" class="accordion-panel" hidden>
+            <ul class="tool-list">
+              <li tabindex="0" class="tool-item" data-url="https://chat.openai.com">ChatGPT (Codex)</li>
+              <li tabindex="0" class="tool-item" data-url="https://www.anthropic.com">Claude</li>
+              <li tabindex="0" class="tool-item" data-url="#">DeepSeek</li>
+              <li tabindex="0" class="tool-item" data-url="https://ai.google">Geminis</li>
+              <li tabindex="0" class="tool-item" data-url="#">NotebookLM</li>
+              <li tabindex="0" class="tool-item" data-url="https://ollama.com">Ollama</li>
+              <li tabindex="0" class="tool-item" data-url="#">QWEN</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cloud" class="section" data-section="cloud">
+      <div class="wrap">
+        <h2 class="section-title">Computación en la Nube</h2>
+        <div class="accordion" data-section="cloud">
+          <button class="accordion-toggle" aria-expanded="false" aria-controls="cloud-panel">Ver herramientas</button>
+          <div id="cloud-panel" class="accordion-panel" hidden>
+            <ul class="tool-list">
+              <li tabindex="0" class="tool-item" data-url="https://aws.amazon.com">AWS</li>
+              <li tabindex="0" class="tool-item" data-url="https://azure.microsoft.com">Azure</li>
+              <li tabindex="0" class="tool-item" data-url="https://www.digitalocean.com">DigitalOcean</li>
+              <li tabindex="0" class="tool-item" data-url="https://www.dreamhost.com">Dreamhost</li>
+              <li tabindex="0" class="tool-item" data-url="https://cloud.google.com">Google Cloud</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="local" class="section" data-section="local">
+      <div class="wrap">
+        <h2 class="section-title">Entornos de Servidor Local</h2>
+        <div class="accordion" data-section="local">
+          <button class="accordion-toggle" aria-expanded="false" aria-controls="local-panel">Ver herramientas</button>
+          <div id="local-panel" class="accordion-panel" hidden>
+            <ul class="tool-list">
+              <li tabindex="0" class="tool-item" data-url="#">LAMP</li>
+              <li tabindex="0" class="tool-item" data-url="https://laragon.org">Laragon</li>
+              <li tabindex="0" class="tool-item" data-url="https://www.apachefriends.org/index.html">XAMPP</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="css" class="section" data-section="css">
+      <div class="wrap">
+        <h2 class="section-title">Frameworks CSS</h2>
+        <div class="accordion" data-section="css">
+          <button class="accordion-toggle" aria-expanded="false" aria-controls="css-panel">Ver herramientas</button>
+          <div id="css-panel" class="accordion-panel" hidden>
+            <ul class="tool-list">
+              <li tabindex="0" class="tool-item" data-url="https://bulma.io">Bulma</li>
+              <li tabindex="0" class="tool-item" data-url="https://semantic-ui.com">Semantic UI</li>
+              <li tabindex="0" class="tool-item" data-url="https://tailwindcss.com">Tailwind CSS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="backend" class="section" data-section="backend">
+      <div class="wrap">
+        <h2 class="section-title">Frameworks BackEnd</h2>
+        <div class="accordion" data-section="backend">
+          <button class="accordion-toggle" aria-expanded="false" aria-controls="backend-panel">Ver herramientas</button>
+          <div id="backend-panel" class="accordion-panel" hidden>
+            <ul class="tool-list">
+              <li tabindex="0" class="tool-item" data-url="https://www.djangoproject.com">Django</li>
+              <li tabindex="0" class="tool-item" data-url="https://expressjs.com">Express</li>
+              <li tabindex="0" class="tool-item" data-url="#">Fastify</li>
+              <li tabindex="0" class="tool-item" data-url="https://palletsprojects.com/p/flask/">Flask</li>
+              <li tabindex="0" class="tool-item" data-url="#">Gin</li>
+              <li tabindex="0" class="tool-item" data-url="#">Lapis</li>
+              <li tabindex="0" class="tool-item" data-url="https://laravel.com">Laravel</li>
+              <li tabindex="0" class="tool-item" data-url="#">Leaf PHP</li>
+              <li tabindex="0" class="tool-item" data-url="https://nestjs.com">Nest.js</li>
+              <li tabindex="0" class="tool-item" data-url="#">TornadoTurbo Lua</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="frontend" class="section" data-section="frontend">
+      <div class="wrap">
+        <h2 class="section-title">Frameworks FrontEnd</h2>
+        <div class="accordion" data-section="frontend">
+          <button class="accordion-toggle" aria-expanded="false" aria-controls="frontend-panel">Ver herramientas</button>
+          <div id="frontend-panel" class="accordion-panel" hidden>
+            <ul class="tool-list">
+              <li tabindex="0" class="tool-item" data-url="https://alpinejs.dev">AlpineJS</li>
+              <li tabindex="0" class="tool-item" data-url="https://angular.io">Angular</li>
+              <li tabindex="0" class="tool-item" data-url="https://jquery.com">jQuery</li>
+              <li tabindex="0" class="tool-item" data-url="https://react.dev">React</li>
+              <li tabindex="0" class="tool-item" data-url="https://svelte.dev">Svelte</li>
+              <li tabindex="0" class="tool-item" data-url="https://vuejs.org">Vue</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" class="section" data-section="tools">
+      <div class="wrap">
+        <h2 class="section-title">Gestores de Bases de Datos GUI</h2>
+        <div class="accordion" data-section="tools">
+          <button class="accordion-toggle" aria-expanded="false" aria-controls="tools-panel">Ver herramientas</button>
+          <div id="tools-panel" class="accordion-panel" hidden>
+            <ul class="tool-list">
+              <li tabindex="0" class="tool-item" data-url="https://dbeaver.io">DBeaver</li>
+              <li tabindex="0" class="tool-item" data-url="https://www.heidisql.com">HeidiSQL</li>
+              <li tabindex="0" class="tool-item" data-url="#">SQLyog</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="db" class="section" data-section="db">
+      <div class="wrap">
+        <h2 class="section-title">Motores de Bases de Datos</h2>
+        <small>(R = Relacional ; NR = No Relacional)</small>
+        <div class="accordion" data-section="db">
+          <button class="accordion-toggle" aria-expanded="false" aria-controls="db-panel">Ver herramientas</button>
+          <div id="db-panel" class="accordion-panel" hidden>
+            <ul class="tool-list">
+              <li tabindex="0" class="tool-item" data-url="https://mariadb.org">MariaDB (R)</li>
+              <li tabindex="0" class="tool-item" data-url="https://www.mongodb.com">MongoDB (NR)</li>
+              <li tabindex="0" class="tool-item" data-url="https://www.mysql.com">MySQL (R)</li>
+              <li tabindex="0" class="tool-item" data-url="https://www.postgresql.org">PostgreSQL (R)</li>
+              <li tabindex="0" class="tool-item" data-url="https://redis.io">Redis (NR)</li>
+              <li tabindex="0" class="tool-item" data-url="https://www.sqlite.org">SQLite (R)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="langs" class="section" data-section="langs">
+      <div class="wrap">
+        <h2 class="section-title">Lenguajes</h2>
+        <div class="accordion" data-section="langs">
+          <button class="accordion-toggle" aria-expanded="false" aria-controls="langs-panel">Ver herramientas</button>
+          <div id="langs-panel" class="accordion-panel" hidden>
+            <ul class="tool-list">
+              <li tabindex="0" class="tool-item" data-url="https://www.python.org">Python</li>
+              <li tabindex="0" class="tool-item" data-url="https://developer.mozilla.org/docs/Web/JavaScript">JavaScript</li>
+              <li tabindex="0" class="tool-item" data-url="https://www.typescriptlang.org">TypeScript</li>
+              <li tabindex="0" class="tool-item" data-url="https://www.java.com">Java</li>
+              <li tabindex="0" class="tool-item" data-url="https://isocpp.org">C++</li>
+              <li tabindex="0" class="tool-item" data-url="https://docs.microsoft.com/dotnet/csharp">C#</li>
+              <li tabindex="0" class="tool-item" data-url="#">SQL</li>
+              <li tabindex="0" class="tool-item" data-url="https://golang.org">Go</li>
+              <li tabindex="0" class="tool-item" data-url="https://www.rust-lang.org">Rust</li>
+              <li tabindex="0" class="tool-item" data-url="#">Swift / Kotlin</li>
+              <li tabindex="0" class="tool-item" data-url="https://www.php.net">PHP</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="collab" class="section" data-section="collab">
+      <div class="wrap">
+        <h2 class="section-title">Herramientas de Colaboración</h2>
+        <div class="accordion" data-section="collab">
+          <button class="accordion-toggle" aria-expanded="false" aria-controls="collab-panel">Ver herramientas</button>
+          <div id="collab-panel" class="accordion-panel" hidden>
+            <ul class="tool-list">
+              <li tabindex="0" class="tool-item" data-url="https://git-scm.com">Git</li>
+              <li tabindex="0" class="tool-item" data-url="https://github.com">GitHub</li>
+              <li tabindex="0" class="tool-item" data-url="https://about.gitlab.com">GitLab</li>
+              <li tabindex="0" class="tool-item" data-url="#">GitBucket</li>
+              <li tabindex="0" class="tool-item" data-url="https://www.atlassian.com/software/jira">Jira</li>
+              <li tabindex="0" class="tool-item" data-url="https://trello.com">Trello</li>
+              <li tabindex="0" class="tool-item" data-url="https://linear.app">Linear</li>
+              <li tabindex="0" class="tool-item" data-url="https://www.notion.so">Notion</li>
+              <li tabindex="0" class="tool-item" data-url="https://slack.com">Slack</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="notes wrap">
+      <p><strong>Nota</strong> Puedes usar el buscador para filtrar por nombre; las secciones se pueden compartir con enlaces directos.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© 2026 DevsUDO. Landing Page de herramientas para desarrolladores.<br>Desarrollada por Oliver Martínez.<br>Hosteada por Victor Martínez.</small>
+    </div>
+  </footer>
+
+  <!-- Ventana Emergente para herramientas sin links -->
+  <div id="tool-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close" aria-label="Cerrar">✕</button>
+      <h3 id="modal-title">Herramienta</h3>
+      <p id="modal-body">Por lo visto, la herramienta seleccionada no te redirecciona a algún otro sitio, puedes copiar el nombre y buscarla manualmente.</p>
+      <button id="modal-copy" class="cta">Copiar nombre.</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
